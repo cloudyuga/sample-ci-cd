@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: do-kubernetes-sample-app
-          image: cloudyuga/sample-cicd-app:latest 
+          image: cloudyuga/sample-cicd-app:$COMMIT_SHA1
           ports:
             - containerPort: 80
               name: http
